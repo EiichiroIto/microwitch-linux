@@ -1,0 +1,1 @@
+#('MicroPython-Board.st' 'Microwitch-Plugins.st' 'Microwitch-Translator.st' 'Microwitch-Objects.st' 'microwitch07.cs' 'removeUploadFunctions.cs' 'microwitch07-raspi.cs') do: [:each | (FileStream fileNamed: 'src/', each) fileIn].
