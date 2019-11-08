@@ -4,10 +4,10 @@ micro:witch は、micro:bit のためのブロック型プログラミング環�
 ![screenshot1](https://raw.githubusercontent.com/EiichiroIto/microwitch/master/src/images/screenshot1.png)
 
 ## インストール方法
-1. 適当なフォルダにコピーしてください。
+1. ターミナルで sudo make install を実行してください。
 
 ## 起動方法
-1. フォルダ内の microwitch を実行してください。
+1. メニューから プログラミング - micro:witch を選んで実行してください。
 1. 日本語を選んでください。
 
 ## 使い方

@@ -4,10 +4,10 @@ micro:witch is a block-style programming environment for micro:bit based on MIT 
 ![screenshot1](https://raw.githubusercontent.com/EiichiroIto/microwitch/master/src/images/screenshot1.png)
 
 ## Installation
-1. Copy all files to an appropriate folder.
+1. Execute "sudo make install" in terminal.
 
 ## Run
-1. Start microwitch.
+1. Select micro:witch in Programming menu.
 
 ## Usage
 1. Connect a micro:bit to your PC.
