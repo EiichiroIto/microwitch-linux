@@ -25,6 +25,10 @@ micro:witch is a block-style programming environment for micro:bit based on MIT 
 1. You can send a program quickly while the micro:bit is connecting.
 
 ## Trouble shooting
+### I can't send a firmware to my micro:bit.
+It is very likely to fail sending a firmware in Linux system.
+You may send a firmware just after connecting micro:bit to your PC, then it's highly recommended using REPL Execution.
+
 ### I can't connect to my micro:bit or transfer a program on REPL Execution.
 Firmware on your micro:bit may be old version. You can upgrage newer firmware. Please check following site.
 
