@@ -328,11 +328,11 @@ msgstr "アナログピン %n の値"
 msgid "analog write pin %n to %n"
 msgstr "アナログピン %n を %n にする"
 
-msgid "analog set period pin %n to %n msec"
-msgstr "アナログピン %n の周期を %n ミリ秒にする"
+msgid "analog set period pin %n to %n usec"
+msgstr "アナログピン %n の周期を %n マイクロ秒にする"
 
-msgid "pin %n is touched"
-msgstr "ピン %n を触っている"
+msgid "%T is touched"
+msgstr "%T を触っている"
 
 msgid "led"
 msgstr "LED"
@@ -423,6 +423,9 @@ msgstr "音楽 %N を演奏する"
 
 msgid "play music %N repeat"
 msgstr "音楽 %N を繰り返し演奏する"
+
+msgid "play music %N repeat until done"
+msgstr "音楽 %N を繰り返し演奏して待つ"
 
 msgid "play music %N until done"
 msgstr "音楽 %N を演奏して待つ"
@@ -697,6 +700,9 @@ msgstr "サーボピン %j を %n 度にする"
 msgid "servo set pin %j %n msec %n to %n"
 msgstr "サーボピン %j を %n ミリ秒 最大 %n 最小 %n に設定する"
 
+msgid "servo set pin %j %n msec"
+msgstr "サーボピン %j を %n ミリ秒に設定する"
+
 msgid "port"
 msgstr "ポート"
 
@@ -735,4 +741,103 @@ msgstr "I2Cのアドレス %n の値"
 
 msgid "I2C write addr %n data %L"
 msgstr "I2Cのアドレス %n に %L を書く"
+
+msgid "I2C write addr %n data %n"
+msgstr "I2Cのアドレス %n1 に %n2 を書く"
+
+msgid "I2C write addr %n data %n %n"
+msgstr "I2Cのアドレス %n1 に %n2 %n3 を書く"
+
+msgid "I2C write addr %n data %n %n %n"
+msgstr "I2Cのアドレス %n1 に %n2 %n3 %n4 を書く"
+
+msgid "show python code"
+msgstr "Pythonコードを表示する"
+
+msgid "Python code"
+msgstr "Pythonコード"
+
+msgid "light"
+msgstr "明るさ"
+
+msgid "send firmware to micro:bit?"
+msgstr "micro:bitにファームウェアを転送しますか？"
+
+msgid "%n between %n and %n"
+msgstr "%n1 が %n2 以上 %n3 以下"
+
+msgid "has duplicate hat blocks."
+msgstr "同名の開始ブロックがあります"
+
+msgid "set usonic trig %j echo %j"
+msgstr "超音波センサのTrigを %j1 にEchoを %j2 に設定する"
+
+msgid "usonic distance"
+msgstr "超音波センサの距離"
+
+msgid "ticks ms"
+msgstr "稼働時間(ms)"
+
+msgid "ticks us"
+msgstr "稼働時間(us)"
+
+msgid "uart init baud %n"
+msgstr "UARTをボーレート %n で初期化する"
+
+msgid "uart init baud %n tx %n rx %n"
+msgstr "UARTをボーレート %n tx %n rx %n で初期化する"
+
+msgid "uart read"
+msgstr "UART読み込み"
+
+msgid "uart read line"
+msgstr "UART１行読み込み"
+
+msgid "uart write %s"
+msgstr "UARTに %s を書き込む"
+
+msgid "%n bitand %n"
+msgstr "%n と %n の論理積"
+
+msgid "%n bitor %n"
+msgstr "%n と %n の論理和"
+
+msgid "%n bitxor %n"
+msgstr "%n と %n の排他的論理和"
+
+msgid "%n bit shift left %n"
+msgstr "%n の %n ビット左シフト"
+
+msgid "%n bit shift right %n"
+msgstr "%n の %n ビット右シフト"
+
+msgid "Subroutine name:"
+msgstr "サブルーチン名:"
+
+msgid "too long name"
+msgstr "名前が長すぎます"
+
+msgid "connect before send"
+msgstr "接続してから送信してください"
+
+msgid "initialize micro:bit"
+msgstr "micro:bitを初期化する"
+
+msgid "initialize micro:bit?"
+msgstr "micro:bitを初期化しますか？"
+
+msgid "init exboard"
+msgstr "拡張ボードを初期化する"
+
+msgid "servo ch %n degrees %n"
+msgstr "ch %n1 のサーボの角度を %n2 にする"
+
+msgid "motor ch %n speed %n"
+msgstr "ch %n1 のモーターの速度を %n2 にする"
+
+msgid "subroutine %e"
+msgstr "サブルーチン %e"
+
+msgid "call %e"
+msgstr "%e を呼び出す"
 

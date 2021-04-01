@@ -328,11 +328,11 @@ msgstr "アナログピン %n のあたい"
 msgid "analog write pin %n to %n"
 msgstr "アナログピン %n を %n にする"
 
-msgid "analog set period pin %n to %n msec"
-msgstr "アナログピン %n のしゅうきを %n ミリびょうにする"
+msgid "analog set period pin %n to %n usec"
+msgstr "アナログピン %n のしゅうきを %n マイクロびょうにする"
 
-msgid "pin %n is touched"
-msgstr "ピン %n をさわっている"
+msgid "%T is touched"
+msgstr "%T をさわっている"
 
 msgid "led"
 msgstr "LED"
@@ -423,6 +423,9 @@ msgstr "おんがく %N をえんそうする"
 
 msgid "play music %N repeat"
 msgstr "おんがく %N をくりかえしえんそうする"
+
+msgid "play music %N repeat until done"
+msgstr "おんがく %N をくりかえしえんそうしてまつ"
 
 msgid "play music %N until done"
 msgstr "おんがく %N をえんそうしてまつ"
@@ -697,6 +700,9 @@ msgstr "サーボピン %j を %n どにする"
 msgid "servo set pin %j %n msec %n to %n"
 msgstr "サーボピン %j を %n ミリびょう さいだい %n さいしょう %n にせっていする"
 
+msgid "servo set pin %j %n msec"
+msgstr "サーボピン %j を %n ミリびょうにせっていする"
+
 msgid "port"
 msgstr "ポート"
 
@@ -734,4 +740,104 @@ msgid "I2C read addr %n"
 msgstr "I2Cでアドレス %n をよみこむ"
 
 msgid "I2C write addr %n data %L"
-msgstr "I2Cでアドレス %n に %L をかきこむ"
+msgstr "I2Cでアドレス %n に %L をかく"
+
+msgid "I2C write addr %n data %n"
+msgstr "I2Cのアドレス %n1 に %n2 をかく"
+
+msgid "I2C write addr %n data %n %n"
+msgstr "I2Cのアドレス %n1 に %n2 %n3 をかく"
+
+msgid "I2C write addr %n data %n %n %n"
+msgstr "I2Cのアドレス %n1 に %n2 %n3 %n4 をかく"
+
+msgid "show python code"
+msgstr "Pythonコードをひょうじする"
+
+msgid "Python code"
+msgstr "Pythonコード"
+
+msgid "light"
+msgstr "あかるさ"
+
+msgid "send firmware to micro:bit?"
+msgstr "micro:bitにファームウェアをてんそうしますか？"
+
+msgid "%n between %n and %n"
+msgstr "%n1 が %n2 いじょう %n3 いか"
+
+msgid "has duplicate hat blocks."
+msgstr "どうめいのかいしブロックがあります"
+
+msgid "set usonic trig %j echo %j"
+msgstr "ちょうおんぱセンサのTrigを %j1 にEchoを %j2 にせっていする"
+
+msgid "usonic distance"
+msgstr "ちょうおんぱセンサのきょり"
+
+msgid "ticks ms"
+msgstr "かどうじかん(ms)"
+
+msgid "ticks us"
+msgstr "かどうじかん(us)"
+
+msgid "uart init baud %n"
+msgstr "UARTをボーレート %n でしょきかする"
+
+msgid "uart init baud %n tx %n rx %n"
+msgstr "UARTをボーレート %n tx %n rx %n でしょきかする"
+
+msgid "uart read"
+msgstr "UARTよみこみ"
+
+msgid "uart read line"
+msgstr "UART１ぎょうよみこみ"
+
+msgid "uart write %s"
+msgstr "UARTに %s をかきこむ"
+
+msgid "%n bitand %n"
+msgstr "%n と %n のろんりせき"
+
+msgid "%n bitor %n"
+msgstr "%n と %n のろんりわ"
+
+msgid "%n bitxor %n"
+msgstr "%n と %n のはいたてきろんりわ"
+
+msgid "%n bit shift left %n"
+msgstr "%n の %n ビットひだりシフト"
+
+msgid "%n bit shift right %n"
+msgstr "%n の %n ビットみぎシフト"
+
+msgid "Subroutine name:"
+msgstr "サブルーチンめい:"
+
+msgid "too long name"
+msgstr "なまえがながすぎます"
+
+msgid "connect before send"
+msgstr "せつぞくしてからそうしんしてください"
+
+msgid "initialize micro:bit"
+msgstr "micro:bitをしょきかする"
+
+msgid "initialize micro:bit?"
+msgstr "micro:bitをしょきかしますか？"
+
+msgid "init exboard"
+msgstr "かくちょうボードをしょきかする"
+
+msgid "servo ch %n degrees %n"
+msgstr "ch %n1 のサーボのかくどを %n2 にする"
+
+msgid "motor ch %n speed %n"
+msgstr "ch %n1 のモーターのそくどを %n2 にする"
+
+msgid "subroutine %e"
+msgstr "サブルーチン %e"
+
+msgid "call %e"
+msgstr "%e をよびだす"
+
