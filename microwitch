@@ -7,22 +7,14 @@
 VM_VERSION=`find /usr/lib/squeak/ -name "squeakvm" -type f|cut -f5 -d"/"`
 SQ_DIR=/usr/lib/squeak/$VM_VERSION
 VM="$SQ_DIR/squeakvm"
-VMOPTIONS="-encoding UTF-8 -vm-display-x11 -plugins /usr/lib/scratch/plugins/:$SQ_DIR/"
-#IMAGE="/usr/share/microwitch/microwitch.image"
-IMAGE="/usr/local/share/microwitch/microwitch.image"
+VMOPTIONS="-encoding UTF-8 -vm-display-x11 -plugins /usr/lib/microwitch/plugins/:$SQ_DIR/"
+IMAGE="/usr/share/microwitch/microwitch.image"
 IMOPTIONS=""
 DOCUMENT=""
 WRAPPER=""
 
 #set to 1 to work around OLPC bug #8008
 export SQUEAK_FAKEBIGCURSOR=0
-
-# default directories (used if not running as Sugar activity)
-[ -z "$SQUEAK_SECUREDIR" ] && export SQUEAK_SECUREDIR="$HOME/.microwitch/private"
-[ -z "$SQUEAK_USERDIR" ] && export SQUEAK_USERDIR="$HOME/Documents/microwitch"
-
-[ ! -d "$SQUEAK_SECUREDIR" ] && mkdir -p "$SQUEAK_SECUREDIR" && chmod 700 "$SQUEAK_SECUREDIR"
-[ ! -d "$SQUEAK_USERDIR" ] && mkdir -p "$SQUEAK_USERDIR"
 
 usage()
 {
