@@ -3,11 +3,24 @@ micro:witch is a block-style programming environment for micro:bit based on MIT 
 
 ![screenshot1](https://raw.githubusercontent.com/EiichiroIto/microwitch/master/src/images/screenshot1.png)
 
-## Installation
-1. Execute "sudo make install" in terminal.
+## Installation & Run
+### Raspberry OS
+```bash
+wget https://github.com/EiichiroIto/microwitch-linux/releases/download/v1.2.3/microwitch_1.2.3-1_armhf.deb
+sudo apt install squeak-vm squeak-plugins-scratch
+sudo dpkg -i microwitch_1.2.3-1_armhf.deb
+```
 
-## Run
-1. Select micro:witch in Programming menu.
+Select micro:witch from Programming menu.
+
+### Intel PC (ex. Ubuntu 64bit)
+```bash
+wget https://github.com/EiichiroIto/microwitch-linux/releases/download/v1.2.3/microwitch_1.2.3-1_amd64.deb
+sudo apt install squeak-vm squeak-plugins-scratch
+sudo dpkg -i microwitch_1.2.3-1_amd64.deb
+```
+
+Run microwitch from any shells.
 
 ## Usage
 1. Connect a micro:bit to your PC.
