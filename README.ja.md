@@ -3,12 +3,24 @@ micro:witch は、micro:bit のためのブロック型プログラミング環�
 
 ![screenshot1](https://raw.githubusercontent.com/EiichiroIto/microwitch/master/src/images/screenshot1.png)
 
-## インストール方法
-1. ターミナルで sudo make install を実行してください。
+## インストールと実行方法
+### Raspberry OS
+```bash
+wget https://github.com/EiichiroIto/microwitch-linux/releases/download/v1.2.3/microwitch_1.2.3-1_armhf.deb
+sudo apt install squeak-vm squeak-plugins-scratch
+sudo dpkg -i microwitch_1.2.3-1_armhf.deb
+```
 
-## 起動方法
-1. メニューから プログラミング - micro:witch を選んで実行してください。
-1. 日本語を選んでください。
+メニューから プログラミング - micro:witch を選んで実行してください。
+
+### Intel PC (Ubuntu 64bit)
+```bash
+wget https://github.com/EiichiroIto/microwitch-linux/releases/download/v1.2.3/microwitch_1.2.3-1_amd64.deb
+sudo apt install squeak-vm squeak-plugins-scratch
+sudo dpkg -i microwitch_1.2.3-1_amd64.deb
+```
+
+シェルなどで microwitch を実行してください。
 
 ## 使い方
 1. micro:bit をパソコンに接続します。
