@@ -3,7 +3,7 @@ micro:witch is a block-style programming environment for micro:bit based on MIT 
 
 ![screenshot1](https://raw.githubusercontent.com/EiichiroIto/microwitch/master/src/images/screenshot1.png)
 
-## Installation & Run
+## Getting started
 ### Raspberry OS
 ```bash
 wget https://github.com/EiichiroIto/microwitch-linux/releases/download/v1.2.3/microwitch_1.2.3-1_armhf.deb
