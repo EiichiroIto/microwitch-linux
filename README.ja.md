@@ -1,7 +1,7 @@
 # micro:witch
 micro:witch は、micro:bit のためのブロック型プログラミング環境です。（based on MIT Scratch）
 
-![screenshot1](https://raw.githubusercontent.com/EiichiroIto/microwitch/master/src/images/screenshot1.png)
+![screenshot1](https://raw.githubusercontent.com/EiichiroIto/microwitch/master/doc/images/screenshot1.png)
 
 ## インストールと実行方法
 ### Raspberry OS
