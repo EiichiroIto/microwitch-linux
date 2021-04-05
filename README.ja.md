@@ -13,7 +13,7 @@ sudo dpkg -i microwitch_1.2.3-1_armhf.deb
 
 メニューから プログラミング - micro:witch を選んで実行してください。
 
-### Intel PC (Ubuntu 64bit)
+### Ubuntu OS (Intel/AMD 64bit)
 ```bash
 wget https://github.com/EiichiroIto/microwitch-linux/releases/download/v1.2.3/microwitch_1.2.3-1_amd64.deb
 sudo apt install squeak-vm squeak-plugins-scratch
