@@ -25,4 +25,8 @@
 'change default basedir.cs'
 'change default homedir.cs'
 'change default translation dir.cs'
+'support for microbit v2.cs'
+'fix some bugs.cs'
+'connect automatically.cs'
+'autodetect unix serial ports.cs'
 ) do: [:each | (FileStream fileNamed: 'v07/', each) fileIn].
