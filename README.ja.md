@@ -6,18 +6,18 @@ micro:witch は、micro:bit のためのブロック型プログラミング環�
 ## インストールと実行方法
 ### Raspberry OS
 ```bash
-wget https://github.com/EiichiroIto/microwitch-linux/releases/download/v1.2.3/microwitch_1.2.3-1_armhf.deb
+wget https://github.com/EiichiroIto/microwitch-linux/releases/download/v1.2.5/microwitch_1.2.5-1_armhf.deb
 sudo apt install squeak-vm squeak-plugins-scratch
-sudo dpkg -i microwitch_1.2.3-1_armhf.deb
+sudo dpkg -i microwitch_1.2.5-1_armhf.deb
 ```
 
 メニューから プログラミング - micro:witch を選んで実行してください。
 
 ### Ubuntu OS (Intel/AMD 64bit)
 ```bash
-wget https://github.com/EiichiroIto/microwitch-linux/releases/download/v1.2.3/microwitch_1.2.3-1_amd64.deb
+wget https://github.com/EiichiroIto/microwitch-linux/releases/download/v1.2.5/microwitch_1.2.5-1_amd64.deb
 sudo apt install squeak-vm squeak-plugins-scratch
-sudo dpkg -i microwitch_1.2.3-1_amd64.deb
+sudo dpkg -i microwitch_1.2.5-1_amd64.deb
 ```
 
 シェルなどで microwitch を実行してください。
@@ -29,29 +29,61 @@ sudo dpkg -i microwitch_1.2.3-1_amd64.deb
 1. デバイスメニューから「micro:bitに送信する」を選びます。
 1. micro:bit でプログラムが実行されます。
 
-## REPL実行
+## ファームウェアのアップロード
+micro:witch を使うには、以下の手順で micro:bit にファームウェアを転送しておく必要があります。
+
+1. micro:bit をパソコンに接続します。
+1. パソコンが micro:bit をストレージとして認識するまで待ちます。
+1. デバイスメニューから「micro:bit を初期化する」を選びます。
+1. 「micro:bit を初期化しますか？」で「はい」をクリックします。
+1. ファームウェアが転送され、再度 micro:bit が認識されたら完了です。
+
+micro:bit を認識していない場合、3番目の手順でファイル選択ダイアログが表示されることがあります。接続を確認してください。
+
+## 使い方
 1. micro:bit をパソコンに接続します。
 1. デバイスメニューから「micro:bitに接続する」を選びます。
-1. micro:bitが接続されているポートを選びます。
+1. micro:bitが接続されているポートを選びます。（例 COM3）
 1. 「接続」が「受付中」に変わるまで数秒程度待ちます。
-1. ブロックや作成したスクリプトをクリックすると、micro:bit に転送され実行されます。
-1. 接続中は「micro:bitに送信する」で高速にプログラムを転送できます。
+1. 作成したスクリプトをクリックすると、micro:bit に転送されて実行されます。
+
+## スクリプトの転送
+作成したスクリプトをクリックしただけでは、スクリプトが micro:bit に保存されないので、電源オフや再起動によって micro:bit 内のスクリプトは失われてしまいます。
+
+スクリプトを保存しておいて、電源が入ったら自動的に実行されるようにするには以下の手順に従ってください。
+
+1. 「緑旗がクリックされたとき」のブロックを出します。
+1. そのブロックの下に、必要なスクリプトを作ります。
+1. micro:bit をパソコンに接続したら、「micro:bit に送信する」を選びます。
+1. スクリプトが転送されると、micro:bit が自動的にリセットされ、スクリプトが動き出します。
+
+実行しているスクリプトを止めるには、micro:bit に接続した状態で画面右上の赤色のボタンを押してください。
 
 ## トラブルシューティング
-### ファームウェアの転送がうまくできない
-Linux版の micro:witch では高い確率でファームウェアの転送に失敗します。
-経験上、micro:bitを接続した直後はファームウェアの転送が成功します。一度だけファームウェアを転送し、以後はREPL実行を利用されることを強く推奨します。
+### ファームウェアの転送に時間がかかる
+USBメモリなど他のUSB装置を抜いてから試してください。
 
-### REPL実行でうまく接続や転送ができない
-micro:bit ファームウェアのバージョンが古い可能性があります。下記サイトを参考にファームウェアをバージョンアップしてみてください。
+### ファームウェアの転送がうまくできない。
+いったん micro:bit をパソコンから抜き、少し待って刺し直してから再度試してください。
 
-[micro:bitファームウェアをアップデートする](https://microbit.org/ja/guide/firmware/)
+micro:bit とパソコンを接続しているケーブルがデータ転送用のものであることを確認してください。
 
-### REPL実行で作成したプログラムが、起動時・リセット時に実行されない
-1. REPL実行中ならば、デバイスメニューから「micro:bit を切断する」で接続を解除します。
-1. ファイルメニューで新規を選び、プログラムが何もない状態にします。
-1. デバイスメニューから「micro:bitに送信する」を選んでファームウェアを転送します。
-1. 上の作業を一度行った後で、再度REPL実行を行ってください。
+DAPLink ファームウェアのバージョンが古い可能性があります。「microbit ファームウェア DAPLink 更新」で検索して、DAPLink ファームウェアを更新してください。
+
+### 「Traceback ...」などのメッセージが表示される。または、REPL実行できない。
+ファームウェアのバージョンが古い可能性があります。再度、micro:bitにファームウェアを転送してください。
+
+古い micro:bit で micro:bit v2 で追加されたコマンド（サウンドイベントなど）を使っている可能性があります。
+
+### micro:bit でスクリプトを実行できない。
+デバイスメニューで「micro:bit に接続する」を選び、ポートを選択します。
+
+ストップボタンを押してから「受付中」の表示を確認してください。
+
+### 超音波センサーや拡張ボードが使えない（反応しない）
+超音波センサーや拡張ボードを使ったスクリプトを作成したら、一度、「micro:bit に送信する」を実行してください。
+
+動作に必要なプログラムが自動的に転送されます。（少し時間がかかります）
 
 ## ライセンス
-MIT License
+GNU GENERAL PUBLIC LICENSE Version 2
