@@ -1,6 +1,8 @@
 # microwitch-linux
 micro:witch is a block-style programming environment for micro:bit based on MIT Scratch.
 
+(BBC micro:bit v2 is supported now and some functions are available)
+
 [Japanese documents](https://github.com/EiichiroIto/microwitch-linux/blob/master/README.ja.md)
 
 [for Windows](https://github.com/EiichiroIto/microwitch)
